@@ -1,1 +1,6 @@
-Stereo Camera object detection and tracking as well as localization with the MYNT EYE Camera.
+Stereo camera object detection and tracking as well as localization with the MYNT EYE Camera.
+
+To turn on the MYNT camera, make sure that the camera is plugged in and then use the following commands in /StereoCameraStuff.
+
+$ source src/MYNT-EYE-S-SDK/wrappers/ros/devel/setup.bash 
+$ roslaunch mynt_eye_ros_wrapper display.launch
