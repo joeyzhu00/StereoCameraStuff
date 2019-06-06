@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/joey/StereoCameraStuff/devel -DCMAKE_INSTALL_PREFIX=/home/joey/StereoCameraStuff/install -G Unix Makefiles

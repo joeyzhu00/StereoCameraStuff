@@ -1,0 +1,12 @@
+/home/joey/StereoCameraStuff/build/CMakeFiles/install.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/clean_test_results.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/run_tests.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/download_extra_data.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/tests.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/edit_cache.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/doxygen.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/rebuild_cache.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/list_install_components.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/install/strip.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/install/local.dir
+/home/joey/StereoCameraStuff/build/CMakeFiles/test.dir
