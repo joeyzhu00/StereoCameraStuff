@@ -1,8 +1,8 @@
-# Install script for directory: /home/joey/StereoCameraStuff/src
+# Install script for directory: /home/joey/Documents/StereoCameraStuff/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/joey/StereoCameraStuff/install")
+  set(CMAKE_INSTALL_PREFIX "/home/joey/Documents/StereoCameraStuff/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,74 +44,81 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/joey/StereoCameraStuff/install/_setup_util.py")
+   "/home/joey/Documents/StereoCameraStuff/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/joey/StereoCameraStuff/install" TYPE PROGRAM FILES "/home/joey/StereoCameraStuff/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/joey/Documents/StereoCameraStuff/install" TYPE PROGRAM FILES "/home/joey/Documents/StereoCameraStuff/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/joey/StereoCameraStuff/install/env.sh")
+   "/home/joey/Documents/StereoCameraStuff/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/joey/StereoCameraStuff/install" TYPE PROGRAM FILES "/home/joey/StereoCameraStuff/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/joey/Documents/StereoCameraStuff/install" TYPE PROGRAM FILES "/home/joey/Documents/StereoCameraStuff/build/catkin_generated/installspace/env.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/joey/StereoCameraStuff/install/setup.bash")
+   "/home/joey/Documents/StereoCameraStuff/install/setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/joey/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/StereoCameraStuff/build/catkin_generated/installspace/setup.bash")
+file(INSTALL DESTINATION "/home/joey/Documents/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/Documents/StereoCameraStuff/build/catkin_generated/installspace/setup.bash")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/joey/StereoCameraStuff/install/setup.sh")
+   "/home/joey/Documents/StereoCameraStuff/install/setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/joey/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/StereoCameraStuff/build/catkin_generated/installspace/setup.sh")
+file(INSTALL DESTINATION "/home/joey/Documents/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/Documents/StereoCameraStuff/build/catkin_generated/installspace/setup.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/joey/StereoCameraStuff/install/setup.zsh")
+   "/home/joey/Documents/StereoCameraStuff/install/setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/joey/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/StereoCameraStuff/build/catkin_generated/installspace/setup.zsh")
+file(INSTALL DESTINATION "/home/joey/Documents/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/Documents/StereoCameraStuff/build/catkin_generated/installspace/setup.zsh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/joey/StereoCameraStuff/install/.rosinstall")
+   "/home/joey/Documents/StereoCameraStuff/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/joey/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/StereoCameraStuff/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/joey/Documents/StereoCameraStuff/install" TYPE FILE FILES "/home/joey/Documents/StereoCameraStuff/build/catkin_generated/installspace/.rosinstall")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/joey/Documents/StereoCameraStuff/build/utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/cmake_install.cmake")
+  include("/home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -122,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/joey/StereoCameraStuff/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/joey/Documents/StereoCameraStuff/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

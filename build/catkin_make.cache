@@ -1,2 +1,2 @@
-
--DCATKIN_DEVEL_PREFIX=/home/joey/StereoCameraStuff/devel -DCMAKE_INSTALL_PREFIX=/home/joey/StereoCameraStuff/install -G Unix Makefiles
+modules/point_cloud_seg:utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper
+-DCATKIN_DEVEL_PREFIX=/home/joey/Documents/StereoCameraStuff/devel -DCMAKE_INSTALL_PREFIX=/home/joey/Documents/StereoCameraStuff/install -G Unix Makefiles

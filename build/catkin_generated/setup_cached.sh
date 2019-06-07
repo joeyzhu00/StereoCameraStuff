@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/joey/StereoCameraStuff/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/joey/StereoCameraStuff/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/joey/StereoCameraStuff/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/joey/StereoCameraStuff/src:$ROS_PACKAGE_PATH"
+export PWD="/home/joey/Documents/StereoCameraStuff/build"

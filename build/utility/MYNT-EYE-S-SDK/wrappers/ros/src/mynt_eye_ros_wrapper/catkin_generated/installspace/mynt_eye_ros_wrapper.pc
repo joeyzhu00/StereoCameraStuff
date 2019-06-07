@@ -1,0 +1,8 @@
+prefix=/home/joey/Documents/StereoCameraStuff/install
+
+Name: mynt_eye_ros_wrapper
+Description: Description of mynt_eye_ros_wrapper
+Version: 0.0.0
+Cflags: -I/home/joey/Documents/StereoCameraStuff/install/include
+Libs: -L/home/joey/Documents/StereoCameraStuff/install/lib 
+Requires: cv_bridge geometry_msgs image_transport message_runtime nodelet roscpp sensor_msgs std_msgs tf

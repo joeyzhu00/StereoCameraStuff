@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joey/StereoCameraStuff/src
+CMAKE_SOURCE_DIR = /home/joey/Documents/StereoCameraStuff/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joey/StereoCameraStuff/build
+CMAKE_BINARY_DIR = /home/joey/Documents/StereoCameraStuff/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/joey/StereoCameraStuff/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joey/StereoCameraStuff/src /home/joey/StereoCameraStuff/src /home/joey/StereoCameraStuff/build /home/joey/StereoCameraStuff/build /home/joey/StereoCameraStuff/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joey/Documents/StereoCameraStuff/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joey/Documents/StereoCameraStuff/src /home/joey/Documents/StereoCameraStuff/src /home/joey/Documents/StereoCameraStuff/build /home/joey/Documents/StereoCameraStuff/build /home/joey/Documents/StereoCameraStuff/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 
