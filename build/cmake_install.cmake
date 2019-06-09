@@ -116,6 +116,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/joey/Documents/StereoCameraStuff/build/modules/interface/cmake_install.cmake")
+  include("/home/joey/Documents/StereoCameraStuff/build/modules/seg_visualization/cmake_install.cmake")
   include("/home/joey/Documents/StereoCameraStuff/build/utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/cmake_install.cmake")
   include("/home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/cmake_install.cmake")
 

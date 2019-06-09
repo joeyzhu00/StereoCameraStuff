@@ -196,6 +196,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
+
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
 
@@ -274,6 +277,9 @@ cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 //The directory containing a CMake configuration file for cv_bridge.
 cv_bridge_DIR:PATH=/opt/ros/kinetic/share/cv_bridge/cmake
 
+//The directory containing a CMake configuration file for diagnostic_msgs.
+diagnostic_msgs_DIR:PATH=/opt/ros/kinetic/share/diagnostic_msgs/cmake
+
 //The directory containing a CMake configuration file for dynamic_reconfigure.
 dynamic_reconfigure_DIR:PATH=/opt/ros/kinetic/share/dynamic_reconfigure/cmake
 
@@ -301,8 +307,14 @@ geometry_msgs_DIR:PATH=/opt/ros/kinetic/share/geometry_msgs/cmake
 //The directory containing a CMake configuration file for image_transport.
 image_transport_DIR:PATH=/opt/ros/kinetic/share/image_transport/cmake
 
+//Value Computed by CMake
+interface_BINARY_DIR:STATIC=/home/joey/Documents/StereoCameraStuff/build/modules/interface
+
 //The directory containing a CMake configuration file for interface.
-interface_DIR:PATH=interface_DIR-NOTFOUND
+interface_DIR:PATH=/home/joey/Documents/StereoCameraStuff/devel/share/interface/cmake
+
+//Value Computed by CMake
+interface_SOURCE_DIR:STATIC=/home/joey/Documents/StereoCameraStuff/src/modules/interface
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libtf2.so
@@ -393,6 +405,12 @@ rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
+
+//Value Computed by CMake
+seg_visualization_BINARY_DIR:STATIC=/home/joey/Documents/StereoCameraStuff/build/modules/seg_visualization
+
+//Value Computed by CMake
+seg_visualization_SOURCE_DIR:STATIC=/home/joey/Documents/StereoCameraStuff/src/modules/seg_visualization
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/kinetic/share/sensor_msgs/cmake
@@ -535,7 +553,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -574,6 +592,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding GTest
+FIND_PACKAGE_MESSAGE_DETAILS_GTest:INTERNAL=[/usr/lib/libgtest.a][/usr/include][/usr/lib/libgtest_main.a][v()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/opt/ros/kinetic][v3.3.1()]
 //Details about finding PythonInterp

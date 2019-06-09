@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/joey/Documents/StereoCameraStuff/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -78,16 +90,6 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -99,17 +101,15 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -226,66 +226,6 @@ visualization_msgs_generate_messages_cpp/fast:
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
-modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_py: modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-
-.PHONY : nav_msgs_generate_messages_py
-
-# fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-.PHONY : modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_nodejs: modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : nav_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-nav_msgs_generate_messages_nodejs/fast:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
-.PHONY : nav_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-.PHONY : modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_cpp: modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_cpp
-
-# fast build rule for target.
-nav_msgs_generate_messages_cpp/fast:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
-.PHONY : nav_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
 modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
 	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 .PHONY : modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
@@ -329,21 +269,6 @@ dynamic_reconfigure_generate_messages_py: modules/point_cloud_seg/CMakeFiles/dyn
 dynamic_reconfigure_generate_messages_py/fast:
 	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
-
-# Convenience name for target.
-modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-.PHONY : modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_eus: modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule
-
-.PHONY : nav_msgs_generate_messages_eus
-
-# fast build rule for target.
-nav_msgs_generate_messages_eus/fast:
-	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_eus.dir/build.make modules/point_cloud_seg/CMakeFiles/nav_msgs_generate_messages_eus.dir/build
-.PHONY : nav_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
@@ -666,23 +591,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... install/local"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_eus"
 	@echo "... visualization_msgs_generate_messages_cpp"
-	@echo "... install/local"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... install"
-	@echo "... nav_msgs_generate_messages_lisp"
-	@echo "... nav_msgs_generate_messages_cpp"
 	@echo "... pcl_msgs_generate_messages_cpp"
 	@echo "... nodelet_topic_tools_gencfg"
 	@echo "... dynamic_reconfigure_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_nodejs"
 	@echo "... pcl_msgs_generate_messages_eus"
 	@echo "... edit_cache"

@@ -4,5 +4,7 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
+subdirs(modules/interface)
+subdirs(modules/seg_visualization)
 subdirs(utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper)
 subdirs(modules/point_cloud_seg)

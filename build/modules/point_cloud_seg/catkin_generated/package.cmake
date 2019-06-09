@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "point_cloud_seg")
 set(point_cloud_seg_VERSION "0.0.0")
-set(point_cloud_seg_MAINTAINER "Joey Zhu <joey.zhu@sjsu.edu>")
+set(point_cloud_seg_MAINTAINER "Joey Zhu <joeyzhu00@gmail.com>")
 set(point_cloud_seg_PACKAGE_FORMAT "2")
 set(point_cloud_seg_BUILD_DEPENDS "roscpp" "geometry_msgs" "rospy" "nav_msgs" "std_msgs" "sensor_msgs" "pcl_ros" "pcl_conversions" "visualization_msgs")
 set(point_cloud_seg_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs" "geometry_msgs" "sensor_msgs" "pcl_ros" "pcl_conversions" "nav_msgs" "visualization_msgs")
