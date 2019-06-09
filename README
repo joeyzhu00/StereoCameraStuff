@@ -1,6 +1,14 @@
 Stereo camera object detection and tracking as well as localization with the MYNT EYE Camera.
 
-To turn on the MYNT camera, make sure that the camera is plugged in and then use the following commands in /StereoCameraStuff.
-
+To turn on the MYNT camera, make sure that the camera is plugged in and then use the following commands in /StereoCameraStuff:
 $ source src/MYNT-EYE-S-SDK/wrappers/ros/devel/setup.bash 
 $ roslaunch mynt_eye_ros_wrapper display.launch
+
+For segmentation, make sure that the environment is sourced in /StereoCameraStuff with:
+$ source devel/setup.bash
+
+To perform segmentation, run this launch file:
+$ roslaunch point_cloud_seg seg_virtual_box.launch
+
+To visualize the segmented clusters, run this launch file:
+$ roslaunch seg_visualization cluster_bound_visualization.launch
