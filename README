@@ -12,5 +12,3 @@ $ roslaunch point_cloud_seg seg_virtual_box.launch
 
 To visualize the segmented clusters, run this launch file:
 $ roslaunch seg_visualization cluster_bound_visualization.launch
-
-![image](https://user-images.githubusercontent.com/29212589/59163570-aa296a80-8ab7-11e9-9688-956da5c2da5f.png)
