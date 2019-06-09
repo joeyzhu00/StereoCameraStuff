@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/rule:
+	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/segmentation.dir/rule
+.PHONY : modules/point_cloud_seg/CMakeFiles/segmentation.dir/rule
+
+# Convenience name for target.
+segmentation: modules/point_cloud_seg/CMakeFiles/segmentation.dir/rule
+
+.PHONY : segmentation
+
+# fast build rule for target.
+segmentation/fast:
+	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/build
+.PHONY : segmentation/fast
+
+# Convenience name for target.
 modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
 	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 .PHONY : modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
@@ -585,6 +600,33 @@ topic_tools_generate_messages_nodejs/fast:
 	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build.make modules/point_cloud_seg/CMakeFiles/topic_tools_generate_messages_nodejs.dir/build
 .PHONY : topic_tools_generate_messages_nodejs/fast
 
+src/segmentation.o: src/segmentation.cpp.o
+
+.PHONY : src/segmentation.o
+
+# target to build an object file
+src/segmentation.cpp.o:
+	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/src/segmentation.cpp.o
+.PHONY : src/segmentation.cpp.o
+
+src/segmentation.i: src/segmentation.cpp.i
+
+.PHONY : src/segmentation.i
+
+# target to preprocess a source file
+src/segmentation.cpp.i:
+	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/src/segmentation.cpp.i
+.PHONY : src/segmentation.cpp.i
+
+src/segmentation.s: src/segmentation.cpp.s
+
+.PHONY : src/segmentation.s
+
+# target to generate assembly for a file
+src/segmentation.cpp.s:
+	cd /home/joey/Documents/StereoCameraStuff/build && $(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/src/segmentation.cpp.s
+.PHONY : src/segmentation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -595,6 +637,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... install/local"
+	@echo "... segmentation"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... visualization_msgs_generate_messages_nodejs"
@@ -626,6 +669,9 @@ help:
 	@echo "... topic_tools_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_eus"
 	@echo "... topic_tools_generate_messages_nodejs"
+	@echo "... src/segmentation.o"
+	@echo "... src/segmentation.i"
+	@echo "... src/segmentation.s"
 .PHONY : help
 
 

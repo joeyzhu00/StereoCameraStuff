@@ -3472,11 +3472,12 @@ clean: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/m
 # Directory level rules for directory modules/point_cloud_seg
 
 # Convenience name for "all" pass in the directory.
-modules/point_cloud_seg/all:
+modules/point_cloud_seg/all: modules/point_cloud_seg/CMakeFiles/segmentation.dir/all
 
 .PHONY : modules/point_cloud_seg/all
 
 # Convenience name for "clean" pass in the directory.
+modules/point_cloud_seg/clean: modules/point_cloud_seg/CMakeFiles/segmentation.dir/clean
 modules/point_cloud_seg/clean: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_py.dir/clean
 modules/point_cloud_seg/clean: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 modules/point_cloud_seg/clean: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_eus.dir/clean
@@ -3512,6 +3513,140 @@ modules/point_cloud_seg/clean: modules/point_cloud_seg/CMakeFiles/topic_tools_ge
 modules/point_cloud_seg/preinstall:
 
 .PHONY : modules/point_cloud_seg/preinstall
+
+#=============================================================================
+# Target rules for target modules/point_cloud_seg/CMakeFiles/segmentation.dir
+
+# All Build rule for target.
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/interface_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/interface_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/interface_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/nav_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/diagnostic_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/interface_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/nav_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/std_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/nav_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/nav_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/roscpp_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/roscpp_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/interface_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/interface/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/tf2_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/actionlib_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/actionlib_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/actionlib_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/actionlib_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/seg_visualization/CMakeFiles/actionlib_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/bond_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/bond_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/bond_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/nodelet_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/bond_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/nodelet_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/nodelet_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/nodelet_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/bond_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/tf_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/nodelet_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/tf_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/tf_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/tf_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: utility/MYNT-EYE-S-SDK/wrappers/ros/src/mynt_eye_ros_wrapper/CMakeFiles/tf_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/nodelet_topic_tools_gencfg.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_gencfg.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/topic_tools_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/std_srvs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/std_srvs_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/pcl_ros_gencfg.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/std_srvs_generate_messages_lisp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/pcl_msgs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/std_srvs_generate_messages_nodejs.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/topic_tools_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/std_srvs_generate_messages_eus.dir/all
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/all: modules/point_cloud_seg/CMakeFiles/topic_tools_generate_messages_nodejs.dir/all
+	$(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/depend
+	$(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joey/Documents/StereoCameraStuff/build/CMakeFiles --progress-num=24,25 "Built target segmentation"
+.PHONY : modules/point_cloud_seg/CMakeFiles/segmentation.dir/all
+
+# Include target in all.
+all: modules/point_cloud_seg/CMakeFiles/segmentation.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joey/Documents/StereoCameraStuff/build/CMakeFiles 14
+	$(MAKE) -f CMakeFiles/Makefile2 modules/point_cloud_seg/CMakeFiles/segmentation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joey/Documents/StereoCameraStuff/build/CMakeFiles 0
+.PHONY : modules/point_cloud_seg/CMakeFiles/segmentation.dir/rule
+
+# Convenience name for target.
+segmentation: modules/point_cloud_seg/CMakeFiles/segmentation.dir/rule
+
+.PHONY : segmentation
+
+# clean rule for target.
+modules/point_cloud_seg/CMakeFiles/segmentation.dir/clean:
+	$(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/clean
+.PHONY : modules/point_cloud_seg/CMakeFiles/segmentation.dir/clean
+
+# clean rule for target.
+clean: modules/point_cloud_seg/CMakeFiles/segmentation.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_py.dir

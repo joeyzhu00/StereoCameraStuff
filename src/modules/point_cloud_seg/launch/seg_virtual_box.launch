@@ -1,5 +1,5 @@
 <launch>    
-  <node type="virtual_box_counter" pkg="localization" name="virtual_box_counter" output="screen">
+  <node type="segmentation" pkg="point_cloud_seg" name="segmentation" output="screen">
     <!-- boundaries of the virtual box -->
     <param name="x_lower_bound" value="0.5" />
     <param name="x_upper_bound" value="10" />
@@ -7,22 +7,22 @@
     <param name="y_lower_bound" value="-5" />
     <param name="y_upper_bound" value="5" />
     
-    <param name="z_lower_bound" value="-0.5" />
+    <param name="z_lower_bound" value="-4" />
     <param name="z_upper_bound" value="4" />
 
     <!-- threshold for virtual box  -->
-    <param name="points_in_box_threshold" value="10" />
+    <param name="points_in_box_threshold" value="100" />
 
     <!-- pcl segmentation parameters -->
     <!-- in meters -->
-    <param name="cluster_tolerance" value="0.30" />
+    <param name="cluster_tolerance" value="0.1" />
     <param name="min_cluster_size" value="50" />
-    <param name="max_cluster_size" value="1000" />
+    <param name="max_cluster_size" value="100000000" />
 
     <!-- parameters to determine cutoffs for cluster bounding box size -->
     <param name="x_size_lim" value="1" />
     <param name="y_size_lim" value="1" />
-    <param name="z_size_lim" value="2" />
+    <param name="z_size_lim" value="3" />
 
     <param name="x_size_min" value="0" />
     <param name="y_size_min" value="0" />
@@ -32,6 +32,6 @@
 
   </node>
 
-  <include file="$(find visualization)/launch/lidar_virtual_box_visualization.launch" />
+  <include file="$(find seg_visualization)/launch/virtual_box_visualization.launch" />
   
 </launch>

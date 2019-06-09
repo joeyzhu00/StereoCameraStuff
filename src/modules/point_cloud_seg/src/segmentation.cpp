@@ -1,4 +1,4 @@
-#include "point_cloud_seg/segmentation.h"
+#include "segmentation.h"
 
 namespace pc_processing_node
 {
@@ -10,16 +10,16 @@ namespace pc_processing_node
     void PcProcessingNode::initRosComm()
     {
         // publisher for object detected within virtual box
-        object_detection_pub = pcProcessingNode_nh.advertise<std_msgs::Bool>("/perception/point_cloud_detection", 10);
+        object_detection_pub = pcProcessingNode_nh.advertise<std_msgs::Bool>("/perception/point_cloud_detection", 17);
 
         // publisher for segmented colored point cloud
-        segment_pub = pcProcessingNode_nh.advertise<sensor_msgs::PointCloud2>("/perception/segmented_cloud", 10);
+        segment_pub = pcProcessingNode_nh.advertise<sensor_msgs::PointCloud2>("/perception/segmented_cloud", 17);
 
         // publisher for cluster boundaries and centroid for each segmented cloud
-        cluster_bounds_pub = pcProcessingNode_nh.advertise<interface::Cluster_bound_list>("/perception/cluster_locations", 10);
+        cluster_bounds_pub = pcProcessingNode_nh.advertise<interface::Cluster_bound_list>("/perception/cluster_locations", 17);
 
         // subscriber to the stereo camera
-        stereo_sub = pcProcessingNode_nh.subscribe("/velodyne_points", 10, &PcProcessingNode::stereoCallback, this);
+        stereo_sub = pcProcessingNode_nh.subscribe("/mynteye/points/data_raw", 17, &PcProcessingNode::stereoCallback, this);
     }
 
     void PcProcessingNode::stereoCallback(const sensor_msgs::PointCloud2& stereo_point_msg)
@@ -116,7 +116,7 @@ namespace pc_processing_node
         temp_cluster_boundaries.max_bound.y = max_3d_bound.y;
         temp_cluster_boundaries.max_bound.z = max_3d_bound.z;
 
-        temp_cluster_boundaries.header.frame_id = "velodyne";
+        temp_cluster_boundaries.header.frame_id = "/mynteye_link";
         temp_cluster_boundaries.header.stamp = ros::Time::now();
 
         return temp_cluster_boundaries;
@@ -206,6 +206,11 @@ namespace pc_processing_node
         ec.setInputCloud(filtered_cloud);
         ec.extract(cluster_indices);
 
+        // clustered point cloud output
+        pcl::PointCloud<pcl::PointXYZI>::Ptr output_pc2(new pcl::PointCloud<pcl::PointXYZI>);
+        output_pc2->header.frame_id = "/mynteye_link";
+        output_pc2->height = 1;
+
         // Cluster_bounds to store centroid locations and bounding boxes of each point cloud
         interface::Cluster_bound_list cluster_bound_list;
 
@@ -230,6 +235,9 @@ namespace pc_processing_node
 
                 // stuff the clustered points into pt
                 pt = filtered_cloud->points[*pit];
+
+                output_pc2->points.push_back(pt);
+                ++output_pc2->width;
             }
 
             // calculate the centroid of the point cloud and the boundaries
@@ -250,7 +258,7 @@ namespace pc_processing_node
             cloud_cluster->is_dense = true;
         }
         
-        segment_pub.publish(pt);
+        segment_pub.publish(output_pc2);
 
         cluster_bound_list.num_clusters = cluster_count;
         cluster_bounds_pub.publish(cluster_bound_list);

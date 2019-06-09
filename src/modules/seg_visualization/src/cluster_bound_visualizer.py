@@ -76,7 +76,7 @@ class ClusterVisuals(object):
         """Generate the Marker message for bounding box visualization"""
         outClusterBoundsVis = Marker()
 
-        outClusterBoundsVis.header.frame_id = "/velodyne"
+        outClusterBoundsVis.header.frame_id = "/mynteye_link"
         outClusterBoundsVis.header.stamp = rospy.Time.now()
 
         # generate a line strip
@@ -143,7 +143,7 @@ class ClusterVisuals(object):
         """Generate the Marker message for centroid visualization"""
         outClusterCentroidVis = Marker()
 
-        outClusterCentroidVis.header.frame_id = "/mynt"
+        outClusterCentroidVis.header.frame_id = "/mynteye_link"
         outClusterCentroidVis.header.stamp = rospy.Time.now()
         
         # create cubes

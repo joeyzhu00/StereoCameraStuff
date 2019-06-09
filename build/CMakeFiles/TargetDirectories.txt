@@ -128,6 +128,7 @@
 /home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/CMakeFiles/rebuild_cache.dir
 /home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/CMakeFiles/test.dir
 /home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/CMakeFiles/install/local.dir
+/home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/CMakeFiles/segmentation.dir
 /home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_py.dir
 /home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/CMakeFiles/list_install_components.dir
 /home/joey/Documents/StereoCameraStuff/build/modules/point_cloud_seg/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir

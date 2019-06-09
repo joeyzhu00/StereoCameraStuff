@@ -29,14 +29,14 @@ class VirtualBox(object):
         """Compose and publish PolygonStamped message in the mynt frame"""
         polygonMsg = PolygonStamped()
 
-        x_min = rospy.get_param('/virtual_box_counter/x_lower_bound')
-        x_max = rospy.get_param('/virtual_box_counter/x_upper_bound')
+        x_min = rospy.get_param('/segmentation/x_lower_bound')
+        x_max = rospy.get_param('/segmentation/x_upper_bound')
         
-        y_min = rospy.get_param('/virtual_box_counter/y_lower_bound')
-        y_max = rospy.get_param('/virtual_box_counter/y_upper_bound')
+        y_min = rospy.get_param('/segmentation/y_lower_bound')
+        y_max = rospy.get_param('/segmentation/y_upper_bound')
 
-        z_min = rospy.get_param('/virtual_box_counter/z_lower_bound')
-        z_max = rospy.get_param('/virtual_box_counter/z_upper_bound')
+        z_min = rospy.get_param('/segmentation/z_lower_bound')
+        z_max = rospy.get_param('/segmentation/z_upper_bound')
 
         polygonMsg.polygon.points = [Point32(x_min, y_min, z_min),
                                     Point32(x_min, y_min, z_max),
@@ -56,7 +56,7 @@ class VirtualBox(object):
                                     Point32(x_max, y_min, z_min),
                                     Point32(x_max, y_max, z_min)]
 
-        polygonMsg.header.frame_id = "/mynt"
+        polygonMsg.header.frame_id = "/mynteye_link"
 
         polygonMsg.header.stamp = rospy.Time.now()
     

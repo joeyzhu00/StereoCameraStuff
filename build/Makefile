@@ -1440,6 +1440,19 @@ mynt_eye_ros_wrapper_geneus/fast:
 .PHONY : mynt_eye_ros_wrapper_geneus/fast
 
 #=============================================================================
+# Target rules for targets named segmentation
+
+# Build rule for target.
+segmentation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 segmentation
+.PHONY : segmentation
+
+# fast build rule for target.
+segmentation/fast:
+	$(MAKE) -f modules/point_cloud_seg/CMakeFiles/segmentation.dir/build.make modules/point_cloud_seg/CMakeFiles/segmentation.dir/build
+.PHONY : segmentation/fast
+
+#=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_py
 
 # Build rule for target.
@@ -1914,6 +1927,7 @@ help:
 	@echo "... mynt_eye_ros_wrapper_gencpp"
 	@echo "... _mynt_eye_ros_wrapper_generate_messages_check_deps_GetInfo"
 	@echo "... mynt_eye_ros_wrapper_geneus"
+	@echo "... segmentation"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_eus"
